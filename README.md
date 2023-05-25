@@ -106,3 +106,8 @@ An attractive feature of Spark is its support for myriad deployment modes, enabl
 ![oo](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.13.39%20PM.png)  
 ## Spark components
 ![pp](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.16.07%20PM.png)  
+  
+
+## Spark Directories
+![nn](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.35.20%20PM.png)  
+  
