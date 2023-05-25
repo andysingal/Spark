@@ -73,4 +73,34 @@ If you are using Windows or Mac, you need to change the settings to use as much 
   
 ![Spark](https://github.com/andysingal/Spark/blob/main/Screenshot%202023-05-25%20at%204.55.40%20PM.png)
   
-![ll](https://github.com/andysingal/Spark/blob/main/Screenshot%202023-05-25%20at%205.01.51%20PM.png)  
+# Apache Spark’s Distributed Execution
+If you have read this far, you already know that Spark is a distributed data processing engine with its components working collaboratively on a cluster of machines. Before we explore programming with Spark in the following chapters of this book, you need to understand how all the components of Spark’s distributed architecture work together and communicate, and what deployment modes are available.
+
+Let’s start by looking at each of the individual components shown in Figure below and how they fit into the architecture. At a high level in the Spark architecture, a Spark application consists of a driver program that is responsible for orchestrating parallel operations on the Spark cluster. The driver accesses the distributed components in the cluster—the Spark executors and cluster manager—through a SparkSession.  
+  
+## Spark driver
+As the part of the Spark application responsible for instantiating a SparkSession, the Spark driver has multiple roles: it communicates with the cluster manager; it requests resources (CPU, memory, etc.) from the cluster manager for Spark’s executors (JVMs); and it transforms all the Spark operations into DAG computations, schedules them, and distributes their execution as tasks across the Spark executors. Once the resources are allocated, it communicates directly with the executors.  
+
+![ll](https://github.com/andysingal/Spark/blob/main/Screenshot%202023-05-25%20at%205.01.51%20PM.png)    
+  
+## SparkSession
+In Spark 2.0, the SparkSession became a unified conduit to all Spark operations and data. Not only did it subsume previous entry points to Spark like the SparkContext, SQLContext, HiveContext, SparkConf, and StreamingContext, but it also made working with Spark simpler and easier.
+
+Cluster manager:
+  
+The cluster manager is responsible for managing and allocating resources for the cluster of nodes on which your Spark application runs. Currently, Spark supports four cluster managers: the built-in standalone cluster manager, Apache Hadoop YARN, Apache Mesos, and Kubernetes.
+
+Spark executor: 
+  
+A Spark executor runs on each worker node in the cluster. The executors communicate with the driver program and are responsible for executing tasks on the workers. In most deployments modes, only a single executor runs per node.
+
+Deployment modes:
+  
+An attractive feature of Spark is its support for myriad deployment modes, enabling Spark to run in different configurations and environments. Because the cluster manager is agnostic to where it runs (as long as it can manage Spark’s executors and fulfill resource requests), Spark can be deployed in some of the most popular environments—such as Apache Hadoop YARN and Kubernetes  
+
+![pw](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.22.23%20PM.png)  
+  
+
+![oo](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.13.39%20PM.png)  
+## Spark components
+![pp](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.16.07%20PM.png)  
