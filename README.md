@@ -39,6 +39,36 @@ Spark focuses on its fast, parallel computation engine rather than on storage. U
 The community of Spark developers maintains a list of third-party Spark packages as part of the growing ecosystem (see Figure 1-2). This rich ecosystem of packages includes Spark connectors for a variety of external data sources, performance monitors, and more.
  
   <p>
+  
+## Technologies Covered
+
+As part of this custom image built by us, we have included the following.
+* Hadoop (HDFS, YARN, and Map Reduce)
+* Hive
+* Spark 2
+* Spark 3
+* Jupyter based environment
+  
+
+## Setup Hadoop and Spark Lab
+
+### Pre-requisites
+
+Here are the pre-requisites to setup the Hadoop and Spark lab.
+* Memory: 16 GB RAM
+* CPU: At least Quadcore
+* If you are using Windows or Mac, make sure to setup Docker Desktop.
+* If your system does not meet the requirement, you need to setup environment using AWS Cloud9.
+* Even if you have 16 GB RAM and the Quadcore CPU, the system might slow down once we start the docker containers due to the requirements of the resources. You can always use AWS Cloud9 as fallback option.
+* In my case, I will be demonstrating using Cloud9.
+
+### Configure Docker Desktop
+
+If you are using Windows or Mac, you need to change the settings to use as much resources as possible.
+* Go to Docker Desktop preferences.
+* Change memory to 12 GB.
+* Change CPUs to the maximum number.
+  
  
   
 ![Spark](https://github.com/andysingal/Spark/blob/main/Screenshot%202023-05-25%20at%204.55.40%20PM.png)
