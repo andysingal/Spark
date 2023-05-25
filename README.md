@@ -93,6 +93,8 @@ The cluster manager is responsible for managing and allocating resources for the
 Spark executor: 
   
 A Spark executor runs on each worker node in the cluster. The executors communicate with the driver program and are responsible for executing tasks on the workers. In most deployments modes, only a single executor runs per node.
+  
+![kk](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-25%20at%205.29.03%20PM.png)  
 
 Deployment modes:
   
