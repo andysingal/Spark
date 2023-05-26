@@ -115,3 +115,6 @@ An attractive feature of Spark is its support for myriad deployment modes, enabl
   
 ![nr](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-26%20at%202.49.36%20PM.png)
   
+#Narrow and Wide Transformation
+![be](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-26%20at%202.56.54%20PM.png)  
+  
