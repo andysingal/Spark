@@ -129,5 +129,8 @@ Partitions (with some locality information)
 
 Compute function: Partition => Iterator[T]  
 ![rdd](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-31%20at%2012.46.29%20PM.png)  
-  
+
+![api](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-31%20at%202.46.00%20PM.png)
+
+![n1](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-31%20at%202.46.33%20PM.png)  
   
