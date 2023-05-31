@@ -117,4 +117,17 @@ An attractive feature of Spark is its support for myriad deployment modes, enabl
   
 #Narrow and Wide Transformation
 ![be](https://github.com/andysingal/Spark/blob/main/Images/Screenshot%202023-05-26%20at%202.56.54%20PM.png)  
+
+  
+#Spark: What’s Underneath an RDD?
+
+ The RDD is the most basic abstraction in Spark. There are three vital characteristics associated with an RDD:
+
+Dependencies
+
+Partitions (with some locality information)
+
+Compute function: Partition => Iterator[T]  
+  
+  
   
